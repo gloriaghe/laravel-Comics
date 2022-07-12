@@ -1,3 +1,154 @@
+#sectionFooter {
+  background-image: url(/images/footer-bg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#sectionFooter #linkFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  height: 350px;
+  overflow: hidden;
+}
+
+#sectionFooter #linkFooter section {
+  margin-top: 30px;
+}
+
+#sectionFooter #linkFooter section h3 {
+  color: white;
+  text-align: start;
+}
+
+#sectionFooter #linkFooter section ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+#sectionFooter #linkFooter section ul li {
+  text-align: start;
+}
+
+#sectionFooter #linkFooter section ul li a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#sectionFooter #logo {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+#navFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  height: 130px;
+  width: 100%;
+}
+
+#navFooter div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+
+#navFooter div button {
+  background-color: #303030;
+  border: 2px solid #0282f9;
+  padding: 15px;
+}
+
+#navFooter div a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#navFooter div #social {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navFooter div #social #follow {
+  color: #0282f9;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  #navFooter div #social {
+    width: 50%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 130px;
+}
+
+header section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+
+header section img {
+  width: 80px;
+}
+
+header section ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+header section ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header section ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+header section ul li a.here {
+  border-bottom: 4px solid #53b0f0;
+  padding-bottom: 55px;
+  color: #53b0f0;
+}
+
+@media screen and (max-width: 1200px) {
+  header section ul li a.here {
+    padding-bottom: 15px;
+  }
+}
+
+header section ul li a:hover {
+  color: #53b0f0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -143,57 +294,5 @@
   #app #link #containerBuy div {
     width: 30%;
   }
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 130px;
-}
-
-header section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 75%;
-}
-
-header section img {
-  width: 80px;
-}
-
-header section ul {
-  list-style-type: none;
-  margin: 20px 0;
-}
-
-header section ul li {
-  display: inline-block;
-  padding: 10px;
-}
-
-header section ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-header section ul li a.here {
-  border-bottom: 4px solid #53b0f0;
-  padding-bottom: 55px;
-  color: #53b0f0;
-}
-
-@media screen and (max-width: 1200px) {
-  header section ul li a.here {
-    padding-bottom: 15px;
-  }
-}
-
-header section ul li a:hover {
-  color: #53b0f0;
 }
 
