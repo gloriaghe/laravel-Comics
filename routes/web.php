@@ -19,3 +19,7 @@ Route::get('/', function () {
         'arrComics' => $arrComics
     ]);
 })->name('home');
+
+Route::get('/paginaInterna', function () {
+    return view('paginaInterna');
+})->name('paginaInterna');
