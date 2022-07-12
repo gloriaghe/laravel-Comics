@@ -1,4 +1,4 @@
-@extends('templetes.base')
+@extends('templates.base')
 
 @section('pageTitle', 'Comics')
 
