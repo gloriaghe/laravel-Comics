@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
-    @include ('partials.header')
+    <div id="app">
 
-    @yield ('pageMain')
+        @include ('partials.header')
 
-    @include ('partials.footer')
+        @yield ('pageMain')
+
+        @include ('partials.footer')
+    </div>
 </body>
 </html>

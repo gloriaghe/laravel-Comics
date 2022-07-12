@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#app #jumbo {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+  height: 400px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 130px;
+}
+
+header section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+
+header section img {
+  width: 80px;
+}
+
+header section ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+header section ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header section ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+header section ul li a.here {
+  border-bottom: 4px solid #53b0f0;
+  padding-bottom: 55px;
+  color: #53b0f0;
+}
+
+@media screen and (max-width: 1200px) {
+  header section ul li a.here {
+    padding-bottom: 15px;
+  }
+}
+
+header section ul li a:hover {
+  color: #53b0f0;
+}
+

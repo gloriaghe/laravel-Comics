@@ -57,7 +57,7 @@ $links = [
     <section>
 
         <a href="#">
-            <img src="../assets/img/dc-logo.png" alt="Logo Dc Comics">
+            <img src="/resources/images/dc-logo.png" alt="Logo Dc Comics">
         </a>
         <nav>
             <ul>
