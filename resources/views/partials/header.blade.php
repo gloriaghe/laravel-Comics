@@ -50,7 +50,9 @@ $links = [
                     'url' => "#",
                     'current' => false
                 ]
-            ]
+];
+
+
 ?>
 
 <header>
