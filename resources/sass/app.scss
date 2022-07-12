@@ -1,12 +1,12 @@
 //
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  #app {
+#app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
     color: black;
@@ -14,11 +14,106 @@
     flex-direction: column;
     justify-content: space-between;
 
-    #jumbo{
+    #jumbo {
         background-image: url(../images/jumbotron.jpg);
         background-size: cover;
         height: 400px;
     }
-  }
 
-  @import 'partials/header';
+    #card {
+        background-color: #1c1c1c;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+
+
+
+        #containerCard {
+            display: flex;
+            flex-wrap: wrap;
+            width: 75%;
+            margin: 0 auto;
+            position: relative;
+
+
+            #title {
+                background-color: #0282f9;
+                padding: 15px 20px;
+                position: absolute;
+                top: -60px;
+                left: 20px;
+                font-size: 22px;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            $medium: 1400px;
+            $small: 1000px;
+
+            a {
+                flex-basis: 15%;
+                padding: 30px 0;
+                text-decoration: none;
+                color: white;
+
+                &:hover img {
+                    opacity: 60%;
+                }
+
+                img {
+                    width: 80%;
+                    max-height: 180px;
+                    object-fit: cover;
+                    object-position: top;
+
+
+                }
+
+                span {
+                    display: block;
+                    width: 80%;
+                    text-align: start;
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                    margin-left: 25px;
+                    font-size: 15px;
+                }
+
+            }
+
+            @media screen and (max-width: $medium ) {
+                a {
+                    flex-basis: 20%;
+                }
+            }
+
+            @media screen and (max-width: $small ) {
+                a {
+                    flex-basis: 25%;
+                }
+            }
+
+        }
+
+        button {
+            background-color: #0282f9;
+            align-self: center;
+            padding: 12px 40px;
+            margin: 20px;
+            border: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+
+            }
+
+        }
+
+    }
+}
+
+@import 'partials/header';

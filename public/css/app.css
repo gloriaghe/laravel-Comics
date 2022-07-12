@@ -19,6 +19,90 @@
   height: 400px;
 }
 
+#app #card {
+  background-color: #1c1c1c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+#app #card #containerCard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#app #card #containerCard #title {
+  background-color: #0282f9;
+  padding: 15px 20px;
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  font-size: 22px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#app #card #containerCard a {
+  flex-basis: 15%;
+  padding: 30px 0;
+  text-decoration: none;
+  color: white;
+}
+
+#app #card #containerCard a:hover img {
+  opacity: 60%;
+}
+
+#app #card #containerCard a img {
+  width: 80%;
+  max-height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+#app #card #containerCard a span {
+  display: block;
+  width: 80%;
+  text-align: start;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-left: 25px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+  #app #card #containerCard a {
+    flex-basis: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #app #card #containerCard a {
+    flex-basis: 25%;
+  }
+}
+
+#app #card button {
+  background-color: #0282f9;
+  align-self: center;
+  padding: 12px 40px;
+  margin: 20px;
+  border: none;
+}
+
+#app #card button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
 header {
   display: flex;
   flex-direction: row;
