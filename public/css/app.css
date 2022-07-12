@@ -103,6 +103,48 @@
   font-weight: bolder;
 }
 
+#app #link {
+  background-color: #0282f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#app #link #containerBuy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#app #link #containerBuy div {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#app #link #containerBuy div a {
+  color: white;
+  text-decoration: none;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+}
+
+#app #link #containerBuy div a img {
+  width: 80px;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  #app #link #containerBuy div {
+    width: 30%;
+  }
+}
+
 header {
   display: flex;
   flex-direction: row;

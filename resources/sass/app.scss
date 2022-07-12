@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+$medium: 1400px;
+$small: 1000px;
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
@@ -13,6 +16,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @mixin my-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ;
 
     #jumbo {
         background-image: url(../images/jumbotron.jpg);
@@ -49,8 +59,6 @@
                 cursor: pointer;
             }
 
-            $medium: 1400px;
-            $small: 1000px;
 
             a {
                 flex-basis: 15%;
@@ -113,6 +121,51 @@
 
         }
 
+    }
+
+
+
+
+    #link {
+        background-color: #0282f9;
+        @include my-flex;
+        justify-content: center;
+
+        #containerBuy {
+            // width: 75%;
+            @include my-flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            div {
+                width: 20%;
+                @include my-flex;
+                justify-content: center;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 40px 0;
+                    @include my-flex;
+                    align-items: center;
+                    font-size: 15px;
+
+                    img {
+                        width: 80px;
+                        padding: 0 15px;
+                    }
+                }
+
+                @media screen and (max-width: $small ) {
+                    & {
+                        width: 30%;
+                    }
+                }
+            }
+
+
+
+        }
     }
 }
 
