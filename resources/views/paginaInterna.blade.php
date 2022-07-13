@@ -75,34 +75,29 @@
         <div id="containerBuys">
             <div>
                 <a href="#">
-                    <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="DIGITAL COMICS">
                     <span>DIGITAL COMICS</span>
+                    <img src="{{asset('images/cta-icons.png')}}" alt="DC MERCHANDISE">
                 </a>
             </div>
             <div>
                 <a href="#">
-                    <img src="images/buy-comics-merchandise.png" alt="DC MERCHANDISE">
-                    <span>DC MERCHANDISE</span>
+                    <span>SHOP DC</span>
+                    <img src="{{asset('images/cta-icons.png')}}" alt="DC MERCHANDISE">
                 </a>
             </div>
             <div>
                 <a href="#">
-                    <img src="images/buy-comics-shop-locator.png" alt="SUBSCRIPTION">
-                    <span>SUBSCRIPTION</span>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="images/buy-comics-subscriptions.png" alt="COMIC SHOP LOCATOR">
                     <span>COMIC SHOP LOCATOR</span>
+                    <img src="{{asset('images/cta-icons.png')}}" alt="COMIC SHOP LOCATOR">
                 </a>
             </div>
             <div>
                 <a href="#">
-                    <img src="images/buy-dc-power-visa.svg" alt="DC POWER VISA">
-                    <span>DC POWER VISA</span>
+                    <span>SUBSCRIPTION</span>
+                    <img src="{{asset('images/cta-icons.png')}}" alt="SUBSCRIPTION">
                 </a>
             </div>
+
         </div>
     </section>
 
