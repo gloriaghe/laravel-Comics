@@ -128,6 +128,50 @@ header section ul li a:hover {
   color: #53b0f0;
 }
 
+#blueBar {
+  background-color: #0282f9;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+#blueBar #cardSingle {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  bottom: 25px;
+  left: 12.5%;
+  border: 1px solid white;
+}
+#blueBar #cardSingle #imgCard {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#blueBar #cardSingle .aCard {
+  position: absolute;
+  left: 0;
+  background-color: #00a9d9;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+}
+#blueBar #cardSingle #comicCard {
+  top: 0;
+}
+#blueBar #cardSingle #viewCard {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#cardPage {
+  width: 75%;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;

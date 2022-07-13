@@ -1,0 +1,50 @@
+#blueBar{
+    background-color: #0282f9;
+    width: 100%;
+    height: 80px;
+    position: relative;
+
+    #cardSingle{
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        bottom: 25px;
+        left: 12.5%;
+        border: 1px solid white;
+
+        #imgCard{
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .aCard{
+            position: absolute;
+            left: 0;
+            background-color: #00a9d9;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 13px;
+            color: white;
+        }
+
+        #comicCard{
+            top: 0;
+        }
+
+        #viewCard{
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+
+}
+#cardPage{
+    width: 75%;
+    margin: 0 auto;
+
+    }
+
