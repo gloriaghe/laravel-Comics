@@ -22,10 +22,10 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
     $arrComics = config('comics');
-    return view('home', [
+    return view('comics', [
         'arrComics' => $arrComics
     ]);
-})->name('home');
+})->name('comics');
 
 
 Route::get('/comics/{id}', function ($id) {
