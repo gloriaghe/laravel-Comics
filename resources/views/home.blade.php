@@ -4,13 +4,13 @@
 
 @section('pageMain')
 
-<section id="jumbo"></section>
+
 
 <section id="card">
     <div id="containerCard">
         <div id="title">CURRENT SERIES</div>
         @foreach ($arrComics as $comicItem)
-        <a href="/{{$comicItem['id']}}">
+        <a href="/comics/{{$comicItem['id']}}">
             <img src="{{$comicItem['thumb']}}" alt="{{$comicItem['series']}}">
             <span>{{$comicItem['series']}}</span>
         </a>

@@ -20,7 +20,15 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-Route::get('/{id}', function ($id) {
+Route::get('/comics', function () {
+    $arrComics = config('comics');
+    return view('home', [
+        'arrComics' => $arrComics
+    ]);
+})->name('home');
+
+
+Route::get('/comics/{id}', function ($id) {
     $comic = null;
     foreach (config('comics') as $value){
         if($value['id'] == $id) {
@@ -37,3 +45,21 @@ Route::get('/{id}', function ($id) {
         abort(404);
     }
 })->name('paginaInterna');
+
+Route::get('/{id}', function ($id) {
+    $link = null;
+    foreach (config('links') as $value){
+        if($value['id'] == $id) {
+            $link = $value;
+            break;
+        }
+    }
+
+    if($value){
+        return view('paginaMenu', [
+            'link' => $link,
+        ]);
+    } else {
+        abort(404);
+    }
+})->name('paginaMenu');

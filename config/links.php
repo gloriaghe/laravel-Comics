@@ -3,52 +3,42 @@
 return   [
                 [
                     'text' => "CHARACTERS",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "characters"
                 ],
                 [
                     'text' => "COMICS",
-                    'url' => "#",
-                    'current' => true
+                    'id' => "comics"
                 ],
                 [
                     'text' => "MOVIES",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "movies"
                 ],
                 [
                     'text' => "TV",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "tv"
                 ],
                 [
                     'text' => "GAMES",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "games"
                 ],
                 [
                     'text' => "COLLECTIBLES",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "collectibles"
                 ],
                 [
                     'text' => "VIDEOS",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "videos"
                 ],
                 [
                     'text' => "FANS",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "fans"
                 ],
                 [
                     'text' => "NEWS",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "news"
                 ],
                 [
                     'text' => "SHOP",
-                    'url' => "#",
-                    'current' => false
+                    'id' => "shop"
                 ]
 ];

@@ -7,15 +7,19 @@
         </a>
         <nav>
             <ul>
+                @foreach (config('links') as $menuItem)
+                <li><a class="{{ Route::currentRouteName() === $menuItem['id'] ? 'here' : '' }}" href="/{{$menuItem['id']}}">{{ $menuItem['text'] }}</a></li>
+                {{-- <li><a class="
+                    @if (Route::currentRouteName() === $menuItem['id'])
+                        here
+                    @endif
+                "
+                href="/{{$menuItem['id']}}">{{ $menuItem['text'] }}</a></li> --}}
+            @endforeach
 
-                    {{-- @foreach (config('links') as $link)
-                      <li><a class="@if (route::currentRouteName() === $menuItem['route']) here @endif" href="{{$link['url']}}">{{$link['text']}}</a></li>
-                    @endforeach --}}
-                    @foreach (config('links') as $link)
-                    <li><a href="{{$link['url']}}">{{$link['text']}}</a></li>
-                  @endforeach
 
             </ul>
         </nav>
     </section>
 </header>
+<section id="jumbo"></section>
