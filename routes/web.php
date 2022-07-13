@@ -20,6 +20,20 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-Route::get('/paginaInterna', function () {
-    return view('paginaInterna');
+Route::get('/{id}', function ($id) {
+    $comic = null;
+    foreach (config('comics') as $value){
+        if($value['id'] == $id) {
+            $comic = $value;
+            break;
+        }
+    }
+
+    if($comic){
+        return view('paginaInterna', [
+            'comic' => $comic,
+        ]);
+    } else {
+        abort(404);
+    }
 })->name('paginaInterna');

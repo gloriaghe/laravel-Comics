@@ -9,10 +9,10 @@
 <section id="card">
     <div id="containerCard">
         <div id="title">CURRENT SERIES</div>
-        @foreach ($arrComics as $comic)
-        <a href="#">
-            <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-            <span>{{$comic['series']}}</span>
+        @foreach ($arrComics as $comicItem)
+        <a href="/{{$comicItem['id']}}">
+            <img src="{{$comicItem['thumb']}}" alt="{{$comicItem['series']}}">
+            <span>{{$comicItem['series']}}</span>
         </a>
 
       @endforeach
