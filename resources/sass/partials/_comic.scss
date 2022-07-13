@@ -42,29 +42,85 @@
 
 
 }
+
+
 #cardPage{
-    width: 75%;
-    margin: 0 auto;
+    margin: 70px 0;
 
     #sectionPresentation{
+        width: 75%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        text-align: start;
+
         #text{
             width: 70%;
+
+            h1{
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                color: #003f5e;
+                font-size: 30px;
+            }
+
+            #greenbar{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                background-color: #55ba59;
+                color: white;
+                margin-bottom: 15px;
+
+                .green{
+                    padding: 0 20px;
+                    border: 1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    font-weight: bolder;
+
+                    &#green1{
+                        width: 70%;
+                        height: 100%;
+                        justify-content: space-between;
+                    }
+
+                    &#green2{
+                        width: 30%;
+                        height: 100%;
+                        justify-content: center;
+                    }
+                    .greenlight{
+                        color: #a3fd9c;
+                    }
+                }
+
+            }
         }
 
         #publicity{
-            width:30%
+            width:30%;
+            text-align: end;
         }
     }
 
     #sectionData{
-        display: flex;
-        justify-content: space-between;
+        border: 1px solid #d4cfcf;
 
-        .data{
-            width: 50%;
-            text-align: start;
+        #sectionDatabox{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            .data{
+                width: 50%;
+                text-align: start;
+            }
+
         }
 
 

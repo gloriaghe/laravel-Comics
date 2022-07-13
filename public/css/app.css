@@ -168,24 +168,69 @@ header section ul li a:hover {
 }
 
 #cardPage {
-  width: 75%;
-  margin: 0 auto;
+  margin: 70px 0;
 }
 #cardPage #sectionPresentation {
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  text-align: start;
 }
 #cardPage #sectionPresentation #text {
   width: 70%;
 }
+#cardPage #sectionPresentation #text h1 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #003f5e;
+  font-size: 30px;
+}
+#cardPage #sectionPresentation #text #greenbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #55ba59;
+  color: white;
+  margin-bottom: 15px;
+}
+#cardPage #sectionPresentation #text #greenbar .green {
+  padding: 0 20px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bolder;
+}
+#cardPage #sectionPresentation #text #greenbar .green#green1 {
+  width: 70%;
+  height: 100%;
+  justify-content: space-between;
+}
+#cardPage #sectionPresentation #text #greenbar .green#green2 {
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+}
+#cardPage #sectionPresentation #text #greenbar .green .greenlight {
+  color: #a3fd9c;
+}
 #cardPage #sectionPresentation #publicity {
   width: 30%;
+  text-align: end;
 }
 #cardPage #sectionData {
+  border: 1px solid #d4cfcf;
+}
+#cardPage #sectionData #sectionDatabox {
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-#cardPage #sectionData .data {
+#cardPage #sectionData #sectionDatabox .data {
   width: 50%;
   text-align: start;
 }
