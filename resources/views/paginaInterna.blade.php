@@ -12,7 +12,7 @@
     </div>
     <main id="cardPage">
 
-        <section>
+        <section id="sectionPresentation">
             <div id="text">
                 <h1>{{$comic['title']}}</h1>
                 <div id="greenbar">
@@ -29,8 +29,8 @@
                 <img id="imgPublicity" src="{{asset('images/adv.jpg')}}" alt="publicity">
             </div>
         </section>
-        <section>
-            <div>
+        <section id="sectionData">
+            <div class="data">
                 <h2>Talent</h2>
                 <div>
                 <span>Art by:</span>
@@ -44,7 +44,7 @@
                     <span>{{$item}}</span>
                     @endforeach            </div>
             </div>
-            <div>
+            <div class="data">
                 <h2>Specs</h2>
                 <div>
                     <span>Series:</span>

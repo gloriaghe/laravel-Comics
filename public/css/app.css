@@ -171,6 +171,24 @@ header section ul li a:hover {
   width: 75%;
   margin: 0 auto;
 }
+#cardPage #sectionPresentation {
+  display: flex;
+  justify-content: space-between;
+}
+#cardPage #sectionPresentation #text {
+  width: 70%;
+}
+#cardPage #sectionPresentation #publicity {
+  width: 30%;
+}
+#cardPage #sectionData {
+  display: flex;
+  justify-content: space-between;
+}
+#cardPage #sectionData .data {
+  width: 50%;
+  text-align: start;
+}
 
 * {
   margin: 0;

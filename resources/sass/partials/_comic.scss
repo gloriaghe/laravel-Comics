@@ -46,5 +46,29 @@
     width: 75%;
     margin: 0 auto;
 
+    #sectionPresentation{
+        display: flex;
+        justify-content: space-between;
+        #text{
+            width: 70%;
+        }
+
+        #publicity{
+            width:30%
+        }
+    }
+
+    #sectionData{
+        display: flex;
+        justify-content: space-between;
+
+        .data{
+            width: 50%;
+            text-align: start;
+        }
+
+
+    }
+
     }
 
