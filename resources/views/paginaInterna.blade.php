@@ -36,31 +36,36 @@
             <div id="sectionDatabox">
                 <div class="data">
                     <h2>Talent</h2>
-                    <div>
-                    <span>Art by:</span>
-                    @foreach ($comic['artists'] as $item)
-                    <span>{{$item}}</span>
-                    @endforeach
+                    <div class="boxSingledate">
+                        <h4>Art by:</h4>
+                        <div class="lightblue">
+                            @foreach ($comic['artists'] as $item)
+                            <span>{{$item}}</span>
+                            @endforeach
+                        </div>
                     </div>
-                    <div>
-                        <span>Written by:</span>
-                        @foreach ($comic['writers'] as $item)
-                        <span>{{$item}}</span>
-                        @endforeach            </div>
+                    <div class="boxSingledate">
+                        <h4>Written by:</h4>
+                        <div class="lightblue">
+                            @foreach ($comic['writers'] as $item)
+                            <span>{{$item}}</span>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
                 <div class="data">
                     <h2>Specs</h2>
-                    <div>
-                        <span>Series:</span>
-                        <span>{{$comic['series']}}</span>
+                    <div class="boxSingledate">
+                        <h4>Series:</h4>
+                        <span class="lightblue">{{$comic['series']}}</span>
                     </div>
-                    <div>
-                        <span>U.S. Price:</span>
-                        <span>{{$comic['price']}}</span>
+                    <div class="boxSingledate">
+                        <h4>U.S. Price:</h4>
+                        <span class="green">{{$comic['price']}}</span>
                     </div>
-                    <div>
-                        <span>On Sale Date:</span>
-                        <span>{{$comic['sale_date']}}</span>
+                    <div class="boxSingledate">
+                        <h4>On Sale Date:</h4>
+                        <span class="green">{{$comic['sale_date']}}</span>
                     </div>
                 </div>
             </div>

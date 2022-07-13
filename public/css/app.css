@@ -217,22 +217,60 @@ header section ul li a:hover {
 #cardPage #sectionPresentation #text #greenbar .green .greenlight {
   color: #a3fd9c;
 }
+#cardPage #sectionPresentation #text p {
+  color: #555555;
+  line-height: 25px;
+  margin-bottom: 80px;
+}
 #cardPage #sectionPresentation #publicity {
   width: 30%;
   text-align: end;
+}
+#cardPage #sectionPresentation #publicity h3 {
+  color: #555555;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 #cardPage #sectionData {
   border: 1px solid #d4cfcf;
 }
 #cardPage #sectionData #sectionDatabox {
   width: 75%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
 }
 #cardPage #sectionData #sectionDatabox .data {
   width: 50%;
   text-align: start;
+}
+#cardPage #sectionData #sectionDatabox .data:last-child {
+  padding-left: 30px;
+}
+#cardPage #sectionData #sectionDatabox .data h2 {
+  color: #003f5e;
+  padding-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #d4cfcf;
+}
+#cardPage #sectionData #sectionDatabox .data .boxSingledate {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid #d4cfcf;
+}
+#cardPage #sectionData #sectionDatabox .data .boxSingledate h4 {
+  width: 35%;
+  color: rgb(109, 102, 102);
+}
+#cardPage #sectionData #sectionDatabox .data .boxSingledate .lightblue {
+  width: 65%;
+  color: #00a9d9;
+}
+#cardPage #sectionData #sectionDatabox .data .boxSingledate .green {
+  width: 65%;
+  color: #3f3f3f;
 }
 
 * {
