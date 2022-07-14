@@ -8,7 +8,8 @@
         <nav>
             <ul>
                 @foreach (config('links') as $menuItem)
-                <li><a class="{{ Route::currentRouteName() === $menuItem['id'] ? 'here' : '' }}" href="/{{$menuItem['id']}}">{{ $menuItem['text'] }}</a></li>
+
+                <li><a class="{{(in_array(Route::currentRouteName(), $menuItem['id']) ) ? 'here' : '' }}" href="/{{$menuItem['id'][0]}}">{{ $menuItem['text'] }}</a></li>
                 {{-- <li><a class="
                     @if (Route::currentRouteName() === $menuItem['id'])
                         here

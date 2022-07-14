@@ -3,42 +3,42 @@
 return   [
                 [
                     'text' => "CHARACTERS",
-                    'id' => "characters"
+                    'id' => ["characters", "paginaMenu"]
                 ],
                 [
                     'text' => "COMICS",
-                    'id' => "comics"
+                    'id' => ["comics", "paginaMenu", "paginaInterna"]
                 ],
                 [
                     'text' => "MOVIES",
-                    'id' => "movies"
+                    'id' => ["movies", "paginaMenu"]
                 ],
                 [
                     'text' => "TV",
-                    'id' => "tv"
+                    'id' => ["tv", "paginaMenu"]
                 ],
                 [
                     'text' => "GAMES",
-                    'id' => "games"
+                    'id' => ["games", "paginaMenu"]
                 ],
                 [
                     'text' => "COLLECTIBLES",
-                    'id' => "collectibles"
+                    'id' => ["collectibles", "paginaMenu"]
                 ],
                 [
                     'text' => "VIDEOS",
-                    'id' => "videos"
+                    'id' => ["videos", "paginaMenu"]
                 ],
                 [
                     'text' => "FANS",
-                    'id' => "fans"
+                    'id' => ["fans", "paginaMenu"]
                 ],
                 [
                     'text' => "NEWS",
-                    'id' => "news"
+                    'id' => ["news", "paginaMenu"]
                 ],
                 [
                     'text' => "SHOP",
-                    'id' => "shop"
+                    'id' => ["shop", "paginaMenu"]
                 ]
 ];
